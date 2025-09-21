@@ -130,3 +130,54 @@ print(can_pair(item_quantities))
 
 # ***************************************************************
 
+def split_haycorns(quantity: int):
+    res = []
+    for i in range(1, quantity+1):
+        if quantity % i == 0:
+            res.append(i)
+
+    return res
+
+quantity = 6
+print(split_haycorns(quantity))
+
+quantity = 1
+print(split_haycorns(quantity))
+
+# ***************************************************************
+
+def tiggerfy(s: str):
+    exclude = ['t', 'i', 'g', 'e', 'r']
+    res = []
+    for c in s:
+        if c.lower() not in exclude:
+            res.append(c)
+
+    return ''.join(res)
+
+s = "suspicerous"
+print(tiggerfy(s))
+
+s = "Trigger"
+print(tiggerfy(s))
+
+s = "Hunny"
+print(tiggerfy(s))
+
+# ***************************************************************
+
+def locate_thistles(items: List[str]):
+    res = []
+    for i, item in enumerate(items):
+        if item == 'thistle':
+            res.append(i)
+    return res
+
+items = ["thistle", "stick", "carrot", "thistle", "eeyore's tail"]
+print(locate_thistles(items))
+
+items = ["book", "bouncy ball", "leaf", "red balloon"]
+print(locate_thistles(items))
+
+
+
