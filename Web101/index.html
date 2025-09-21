@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM for Kids Fair - Inspiring Young Innovators</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-atom"></i>
+                <span>STEM for Kids Fair</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#makers">Meet the Makers</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#register" class="nav-register">Register</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="highlight">STEM for Kids Fair</span>
+                <br>Inspiring Young Innovators
+            </h1>
+            <p class="hero-subtitle">
+                A fun, interactive day where children explore science, technology, engineering, and math through hands-on experiments, coding games, robotics demos, and creative maker stations.
+            </p>
+            <div class="hero-buttons">
+                <a href="#register" class="btn btn-primary">Register Now</a>
+                <a href="#activities" class="btn btn-secondary">Explore Activities</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-elements">
+                <div class="element element-1"><i class="fas fa-rocket"></i></div>
+                <div class="element element-2"><i class="fas fa-microscope"></i></div>
+                <div class="element element-3"><i class="fas fa-robot"></i></div>
+                <div class="element element-4"><i class="fas fa-code"></i></div>
+                <div class="element element-5"><i class="fas fa-cube"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Timer -->
+    <section class="countdown-section">
+        <div class="container">
+            <h2>Event Starts In</h2>
+            <div class="countdown-timer">
+                <div class="time-unit">
+                    <span class="time-value" id="days">00</span>
+                    <span class="time-label">Days</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-value" id="hours">00</span>
+                    <span class="time-label">Hours</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-value" id="minutes">00</span>
+                    <span class="time-label">Minutes</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-value" id="seconds">00</span>
+                    <span class="time-label">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details -->
+    <section id="about" class="event-details">
+        <div class="container">
+            <div class="section-header">
+                <h2>Event Information</h2>
+                <p>Join us for an unforgettable day of discovery and learning</p>
+            </div>
+            <div class="details-grid">
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Date & Time</h3>
+                    <p>Saturday, March 15, 2025<br>9:00 AM - 4:00 PM</p>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p>Community Science Center<br>123 Innovation Drive<br>Tech City, TC 12345</p>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Age Range</h3>
+                    <p>Children 6-14 years old<br>Parents and teachers welcome</p>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <h3>Admission</h3>
+                    <p>Free for all attendees<br>Registration required</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="activities">
+        <div class="container">
+            <div class="section-header">
+                <h2>Amazing Activities</h2>
+                <p>Discover the exciting hands-on experiences waiting for you</p>
+            </div>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Science Experiments</h3>
+                    <p>Create colorful chemical reactions, build volcanoes, and explore the wonders of physics through interactive experiments.</p>
+                    <ul>
+                        <li>Volcano eruptions</li>
+                        <li>Slime making</li>
+                        <li>Rainbow density tower</li>
+                    </ul>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Coding Games</h3>
+                    <p>Learn programming basics through fun games and interactive challenges designed for young minds.</p>
+                    <ul>
+                        <li>Scratch programming</li>
+                        <li>Robot coding</li>
+                        <li>Game development</li>
+                    </ul>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Robotics Demos</h3>
+                    <p>Meet and interact with robots, learn about artificial intelligence, and try your hand at robot programming.</p>
+                    <ul>
+                        <li>Robot petting zoo</li>
+                        <li>Drone flying</li>
+                        <li>AI demonstrations</li>
+                    </ul>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Maker Stations</h3>
+                    <p>Build, create, and invent using various tools and materials in our creative maker spaces.</p>
+                    <ul>
+                        <li>3D printing</li>
+                        <li>Circuit building</li>
+                        <li>Woodworking basics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule">
+        <div class="container">
+            <div class="section-header">
+                <h2>Event Schedule</h2>
+                <p>Plan your day with our exciting workshop lineup</p>
+            </div>
+            <div class="schedule-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">9:00 AM</div>
+                    <div class="timeline-content">
+                        <h3>Welcome & Opening Ceremony</h3>
+                        <p>Kick off the day with an exciting introduction to STEM and what's in store!</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">9:30 AM</div>
+                    <div class="timeline-content">
+                        <h3>Morning Workshops Begin</h3>
+                        <p>Choose from various hands-on activities and experiments</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">12:00 PM</div>
+                    <div class="timeline-content">
+                        <h3>Lunch Break</h3>
+                        <p>Food trucks and picnic areas available</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">1:00 PM</div>
+                    <div class="timeline-content">
+                        <h3>Afternoon Activities</h3>
+                        <p>Continue exploring with advanced workshops and demonstrations</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">3:30 PM</div>
+                    <div class="timeline-content">
+                        <h3>Showcase & Awards</h3>
+                        <p>Present your creations and celebrate achievements</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Makers Section -->
+    <section id="makers" class="makers">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet the Makers</h2>
+                <p>Learn from passionate educators and industry professionals</p>
+            </div>
+            <div class="makers-grid">
+                <div class="maker-card">
+                    <div class="maker-image">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dr. Sarah Chen">
+                    </div>
+                    <h3>Dr. Sarah Chen</h3>
+                    <p class="maker-title">Robotics Engineer</p>
+                    <p>Leading our robotics demonstrations and teaching kids about AI and automation.</p>
+                </div>
+                <div class="maker-card">
+                    <div class="maker-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Mike Rodriguez">
+                    </div>
+                    <h3>Mike Rodriguez</h3>
+                    <p class="maker-title">Software Developer</p>
+                    <p>Helping young coders create their first games and interactive programs.</p>
+                </div>
+                <div class="maker-card">
+                    <div class="maker-image">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dr. Emily Watson">
+                    </div>
+                    <h3>Dr. Emily Watson</h3>
+                    <p class="maker-title">Chemistry Professor</p>
+                    <p>Making science fun with exciting experiments and chemical reactions.</p>
+                </div>
+                <div class="maker-card">
+                    <div class="maker-image">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Alex Kim">
+                    </div>
+                    <h3>Alex Kim</h3>
+                    <p class="maker-title">Maker & Inventor</p>
+                    <p>Guiding creative projects in our maker stations and 3D printing lab.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gallery</h2>
+                <p>See the excitement from previous STEM events</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="robots">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-robot"></i>
+                        <p>Kids building robots</p>
+                        <span class="gallery-count">8 photos</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="experiments">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-flask"></i>
+                        <p>Science experiments in action</p>
+                        <span class="gallery-count">12 photos</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="coding">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-laptop-code"></i>
+                        <p>Coding workshop</p>
+                        <span class="gallery-count">6 photos</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="makers">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-tools"></i>
+                        <p>Maker station creations</p>
+                        <span class="gallery-count">10 photos</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="family">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-users"></i>
+                        <p>Family fun activities</p>
+                        <span class="gallery-count">15 photos</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="awards">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-trophy"></i>
+                        <p>Award ceremony</p>
+                        <span class="gallery-count">9 photos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div id="galleryModal" class="gallery-modal">
+        <div class="gallery-modal-content">
+            <div class="gallery-modal-header">
+                <h3 id="galleryModalTitle">Gallery</h3>
+                <button class="gallery-close">&times;</button>
+            </div>
+            <div class="gallery-modal-body">
+                <div class="gallery-carousel">
+                    <button class="gallery-prev">&larr;</button>
+                    <div class="gallery-main-image">
+                        <img id="galleryMainImg" src="" alt="">
+                        <div class="gallery-image-info">
+                            <span id="galleryImageCounter">1 / 8</span>
+                        </div>
+                    </div>
+                    <button class="gallery-next">&rarr;</button>
+                </div>
+                <div class="gallery-thumbnails" id="galleryThumbnails">
+                    <!-- Thumbnails will be generated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registration Section -->
+    <section id="register" class="registration">
+        <div class="container">
+            <div class="registration-content">
+                <div class="registration-info">
+                    <h2>Register for the Event</h2>
+                    <p>Join us for an unforgettable day of STEM exploration! Registration is free and includes access to all activities, workshops, and demonstrations.</p>
+                    <div class="registration-benefits">
+                        <div class="benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Free admission for all attendees</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Access to all workshops and activities</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Take-home experiment kits</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Certificate of participation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="registration-form">
+                    <form id="registrationForm">
+                        <h3>Registration Form</h3>
+                        <div class="form-group">
+                            <label for="parentName">Parent/Guardian Name *</label>
+                            <input type="text" id="parentName" name="parentName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="childName">Child's Name *</label>
+                            <input type="text" id="childName" name="childName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="childAge">Child's Age *</label>
+                            <select id="childAge" name="childAge" required>
+                                <option value="">Select Age</option>
+                                <option value="6">6 years old</option>
+                                <option value="7">7 years old</option>
+                                <option value="8">8 years old</option>
+                                <option value="9">9 years old</option>
+                                <option value="10">10 years old</option>
+                                <option value="11">11 years old</option>
+                                <option value="12">12 years old</option>
+                                <option value="13">13 years old</option>
+                                <option value="14">14 years old</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="interests">Areas of Interest (select all that apply)</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" name="interests" value="science"> Science Experiments</label>
+                                <label><input type="checkbox" name="interests" value="coding"> Coding & Programming</label>
+                                <label><input type="checkbox" name="interests" value="robotics"> Robotics</label>
+                                <label><input type="checkbox" name="interests" value="making"> Maker Projects</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="additionalChildren">Additional Children (optional)</label>
+                            <textarea id="additionalChildren" name="additionalChildren" placeholder="List names and ages of additional children"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Register Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>STEM for Kids Fair</h3>
+                    <p>Inspiring the next generation of innovators through hands-on STEM education.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#activities">Activities</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="#register">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Innovation Drive, Tech City, TC 12345</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-STEM</p>
+                    <p><i class="fas fa-envelope"></i> info@stemkidsfair.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 STEM for Kids Fair. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="database.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- Debug Panel (remove in production) -->
+    <div id="debugPanel" style="position: fixed; bottom: 10px; right: 10px; background: #333; color: white; padding: 10px; border-radius: 5px; font-size: 12px; z-index: 10000; display: none;">
+        <div><strong>Debug Panel</strong></div>
+        <div>Database: <span id="dbStatus">Loading...</span></div>
+        <div>Registrations: <span id="regCount">0</span></div>
+        <button onclick="testDatabase()" style="margin-top: 5px; padding: 5px;">Test DB</button>
+        <button onclick="adminPanel.showAllRegistrations()" style="margin-top: 5px; padding: 5px;">Show All</button>
+        <button onclick="document.getElementById('debugPanel').style.display='none'" style="margin-top: 5px; padding: 5px;">Hide</button>
+    </div>
+    
+    <script>
+        // Show debug panel after page loads
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('debugPanel').style.display = 'block';
+                updateDebugInfo();
+            }, 1000);
+        });
+        
+        function updateDebugInfo() {
+            const dbStatus = window.registrationDB ? 'Loaded' : 'Not Loaded';
+            const regCount = window.registrationDB ? window.registrationDB.getAllRegistrations().length : 0;
+            
+            document.getElementById('dbStatus').textContent = dbStatus;
+            document.getElementById('regCount').textContent = regCount;
+        }
+        
+        // Update debug info every 5 seconds
+        setInterval(updateDebugInfo, 5000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+My Website Topic: Website for event called STEM for Kids Fair
+
+Question #1: What do you already know about your event? 
+The event is called STEM for Kids Fair. It’s a fun, interactive day where children can explore science, technology, engineering, and math through hands-on experiments, coding games, robotics demos, and creative maker stations designed to spark curiosity.
+
+Question #2: What do you still need to find out about your event in order to create a meaningful website?
+I chose this topic because I believe early exposure to STEM builds problem-solving skills, creativity, and confidence in kids. This fair encourages learning in a playful, engaging way while making science and technology accessible to everyone in the community.
+
+Question #3: Who are the people who you would expect to attend this event? (30+ words)
+My target audience includes children aged 6–14, along with their parents and teachers. The event is also aimed at schools, community groups, and organizations that promote STEM education and want to inspire the next generation of innovators.
+
+Question #4: What is the purpose of your website? (30+ words)
+The website will include event details such as the date, time, and location. It will showcase the activities offered, list participating organizations, provide registration forms, share safety guidelines, and include a photo gallery from previous STEM events for inspiration.
+
+Possible features include an online registration form, an interactive map of the event layout, a schedule of workshops, downloadable experiment instructions, a countdown timer, and a “Meet the Makers” section introducing presenters and volunteers.
+
+Question #6: How will your user interact with your website? (30+ words)
+I want visitors to feel excited and inspired to attend. The site should create a sense of wonder, showing that STEM is not only educational but also fun, hands-on, and something the whole family can enjoy together.
