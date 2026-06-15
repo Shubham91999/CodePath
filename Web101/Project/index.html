@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM for Kids Fair</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header-container">
+        <div class="header-item">
+            <img id="header-img" src="img/icon.png" alt="STEM for Kids Fair Logo">
+            <h1>STEM for Kids Fair</h1>
+        </div>
+        <div class="header-item">
+            <button class="header-button">Register Now</button>
+            <button class="header-button">View Activities</button>
+            <button id="reduce-motion-button" class="header-button" aria-pressed="false">Reduce Motion</button>
+        </div>
+    </div>
+    
+    <div class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li class="dropdown">
+                <a href="#resources">Links</a>
+                <div class="dropdown-content">
+                    <a href="https://www.nasa.gov/stem" target="_blank">NASA STEM</a>
+                    <a href="https://www.sciencebuddies.org" target="_blank">Science Buddies</a>
+                </div>
+            </li>
+            <li><button id="theme-button">Toggle Dark Mode</button></li>
+        </ul>
+    </div>
+    
+    <h3>Where Science Meets Fun - Inspiring Tomorrow's Innovators Today!</h3>
+    
+    <section class="about-container" id="about">
+        <div class="about-item">
+            <h2>About the Event</h2>
+            <p>The STEM for Kids Fair is a fun, interactive day where children can explore science, technology, engineering, and math through hands-on experiments, coding games, robotics demos, and creative maker stations designed to spark curiosity. This exciting event is designed for children aged 6-14, along with their parents and teachers, creating an engaging learning environment for the whole family. The fair encourages learning in a playful, accessible way while making science and technology exciting for everyone in the community. Schools, community groups, and organizations that promote STEM education will find this event perfect for inspiring the next generation of innovators.</p>
+        </div>
+    </section>
+
+    <section class="schedule-container" id="schedule">
+        <div class="schedule-item">
+            <h2>Event Schedule</h2>
+        </div>
+        <div class="schedule-item">
+            <img src="img/event_schedule.png" alt="Event schedule chart showing activities throughout the day from 9 AM to 4 PM" width="500" height="350" />
+            <p>Our day-long STEM fair runs from 9:00 AM to 4:00 PM with exciting activities scheduled every hour. The chart above shows the variety of workshops, experiments, and demonstrations available throughout the day. Families can choose from robotics demonstrations, coding workshops, science experiments, and creative maker stations.</p>
+        </div>
+        <div class="schedule-item">
+            <img src="img/children.png" alt="Children participating in hands-on STEM activities including building robots and conducting science experiments" width="500" height="350" />
+            <p>Join us for an unforgettable day of discovery! The photo above shows children actively engaged in our hands-on STEM activities. From building robots to conducting exciting science experiments, every child will find something that sparks their curiosity and passion for learning.</p>
+        </div>
+        <div class="schedule-item">
+            <h3>See STEM in Action!</h3>
+            <!-- YouTube: lazy-load placeholder + fallback link to avoid embed config errors -->
+            <div class="youtube-embed">
+                <div id="youtube-placeholder" class="youtube-thumb" data-video-id="hGwG--GZEfw" style="background-image: url('https://img.youtube.com/vi/hGwG--GZEfw/hqdefault.jpg'); width:500px; height:350px;">
+                    <button id="youtube-play-button" class="youtube-play" aria-label="Play video">▶</button>
+                    <a class="youtube-open-link" href="https://www.youtube.com/watch?v=hGwG--GZEfw" target="_blank" rel="noopener">Open on YouTube</a>
+                </div>
+            </div>
+            <p>Watch this exciting video to see the kind of hands-on STEM activities and experiments that await you at our STEM for Kids Fair!</p>
+        </div>
+    </section>
+
+    <section class="links-container" id="resources">
+        <div class="links-item">
+            <h2>Helpful STEM Resources</h2>
+        </div>
+        <div class="links-item">
+            <article>
+                <h3><a href="https://www.nasa.gov/stem">NASA STEM Resources</a></h3>
+                <p>Explore NASA's comprehensive collection of STEM activities, lesson plans, and educational resources designed to inspire young learners in science, technology, engineering, and mathematics.</p>
+            </article>
+            
+            <article>
+                <h3><a href="https://www.sciencebuddies.org">Science Buddies</a></h3>
+                <p>Discover hundreds of free science fair project ideas, hands-on experiments, and STEM activities perfect for kids of all ages to explore and learn through interactive discovery.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- rsvp
+
+    Purpose:
+    - Section for users to sign up for the event
+    - Contains a form for users to input their information, 
+    and a list of other users who have signed up
+
+    When To Modify:
+    - [ ] Project 6 (REQUIRED FEATURE) 
+    - [ ] Project 6 (STRETCH FEATURE) 
+    - [ ] Any time after
+    --> 
+    <div id="rsvp">
+        <h2>RSVP</h2>
+        <div class="rsvp-container">
+            <div class="rsvp-para">
+                <p>Join us at the STEM for Kids Fair! Please RSVP below so we can reserve a spot for you and your family. We have hands-on workshops, maker stations, and robotics demos suitable for ages 6-14.</p>
+            </div>
+            <div class="rsvp-participants">
+                <p>🎟️ DJ from Texas has RSVP'd.</p>
+                <p>🎟️ Amy from New York has RSVP'd.</p>
+                <p>🎟️ Teresa from Montana has RSVP'd.</p>
+                <div class="participants">
+                    <!-- RSVPs go here -->
+                </div>
+                <p id="rsvp-count">⭐ 3 people have RSVP'd to this event!</p>
+            </div>
+        </div>
+
+        <!--- Sign RSVP Form --->
+        <div class="form-container">
+            <form id="rsvp-form" title="rsvp-form">
+                <div class="form-field">
+                    <label for="rsvp-name">Full name</label>
+                    <input type="text" id="rsvp-name" name="name" required placeholder="Your full name">
+                </div>
+
+                <div class="form-field">
+                    <label for="rsvp-email">Email</label>
+                    <input type="email" id="rsvp-email" name="email" required placeholder="you@example.com">
+                </div>
+
+                <div class="form-field">
+                    <label for="rsvp-city">City</label>
+                    <input type="text" id="rsvp-city" name="city" placeholder="Your city">
+                </div>
+            </form>
+            <!-- Submit button -->
+            <button id="rsvp-button">Submit RSVP</button>
+        </div>      
+    </div>
+
+    <!-- success modal
+
+    Purpose:
+    - Modal that appears when a user successfully signs up for the event
+    - Contains a personalized message and image
+
+    When To Modify:
+    - [ ] Project 9 (REQUIRED FEATURE)
+    - [ ] Project 9 (STRETCH FEATURE) 
+    - [ ] Any time after
+    --> 
+
+    <div id="success-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal-container">
+            <div class="modal-item">
+                <p id="modal-text">Thanks for signing up!</p>
+                <button id="modal-close-button" class="modal-close" aria-label="Close dialog">Close</button>
+            </div>
+            <div class="modal-item">
+                <img id="modal-image" src="img/icon.png" alt="Thank you" width="150" height="150" />
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 STEM for Kids Fair. Inspiring the next generation of innovators.</p>
+        <p>
+            <a href="https://www.nasa.gov/stem" target="_blank">NASA STEM Education</a>
+            <a href="https://www.sciencebuddies.org" target="_blank">Science Buddies</a>
+        </p>
+        <p>Contact us: info@stemforkidsfair.org | Follow us on social media</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

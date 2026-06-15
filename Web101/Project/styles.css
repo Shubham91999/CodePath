@@ -1,0 +1,833 @@
+/*** VSCodeEDU preview fix 
+
+  Purpose:
+  - Fix VSCodeEDU issue that causes a white border to show around
+    the preview window
+
+  When To Modify:
+  - If you change the background color of your webpage, you may need to update this rule too.
+***/
+html {
+    background-color: var(--bg-color);
+}
+
+/*** body ***
+  
+  Purpose:
+  - Add style rules for the body of your webpage
+  - This is useful if you want a rule to apply to EVERYTHING on your page
+    - (Tip: You can always override these rules later in the stylesheet)
+
+  When To Modify:
+  - [ ] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+body {
+    /* Add a background color or image */
+    background-color: #f0f8ff;
+    background-image: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+
+    /* Customize the default size, color, and font for text*/
+    font-size: 16px;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+
+    /* Put space around the edges of the webpage */
+    margin: 20px;
+    padding: 0;
+    padding-top: 50px; /* Add space for fixed navbar */
+    padding-bottom: 80px; /* Add space for fixed footer */
+}
+
+/*** Text ***
+  
+  Purpose: 
+  - Add style rules for headings (h1-6),
+    paragraphs (p), links (a), and buttons
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+h1 {
+    color: #2c5aa0;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #1e3a8a;
+    border-bottom: 3px solid #3b82f6;
+    padding-bottom: 10px;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+h3 {
+    color: #1e3a8a;
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-style: italic;
+    text-align: center;
+    background-color: rgba(59, 130, 246, 0.1);
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+h4 {
+    color: #1e3a8a;
+    font-size: 1.2em;
+    margin-top: 15px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: #3b82f6;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: justify;
+    font-size: 1.1em;
+    padding: 0 10px;
+}
+
+a,
+a * {
+    text-decoration: none;
+
+}
+
+/* Add style to button */
+#theme-button {
+    background-color: transparent;
+    color: white;
+    border: 3px dashed rgba(255,255,255,0.25); /* slightly thicker dashed border */
+    padding: 10px 14px; /* larger clickable area */
+    margin: 6px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: 'Georgia', 'Times New Roman', serif; /* distinctive font */
+    text-decoration: underline dotted rgba(255,255,255,0.4); /* decorative underline */
+    text-underline-offset: 4px;
+}
+
+/* Link pseudo-classes */
+a:link {
+    color: #3b82f6;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #7c3aed;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:active {
+    color: #1e40af;
+    text-decoration: underline;
+}
+
+button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 12px 24px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/*** header ***
+  
+  Purpose:
+  - Add style rules for your website's header section
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+.header-container {
+    background-color: #ffffff;
+    padding: 20px;
+    padding-top: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #3b82f6;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.header-item:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 60%;
+}
+
+.header-item:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 40%;
+}
+
+/* Reduce Motion button (in header) */
+#reduce-motion-button {
+    background-color: #f97316; /* orange */
+    color: white;
+    padding: 10px 14px;
+    margin: 5px;
+    border: 2px solid #ea580c;
+    border-radius: 18px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#reduce-motion-button[aria-pressed="true"] {
+    background-color: #ef4444; /* red when active */
+}
+
+#header-img {
+    width: 80px;
+    max-width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #3b82f6;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.header-button {
+    background-color: #10b981;
+    color: white;
+    padding: 12px 20px;
+    margin: 5px;
+    border: 2px solid #059669;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.header-button:hover {
+    background-color: #059669;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+/*** footer ***
+  
+  Purpose:
+  - Add style rules for your website's footer section
+
+  When To Modify:
+  - [ ] Project 3 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 12px;
+    border-top: 2px solid #3b82f6;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.footer a {
+    color: #60a5fa;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+}
+
+.footer p {
+    margin: 5px 0;
+    color: #e5e7eb;
+}
+
+/*** Navbar [PLACEHOLDER] [ADDED IN UNIT 4] ***/
+
+.navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 0;
+    background-color: #1e3a8a;
+    padding: 0;
+    margin: 0;
+    z-index: 1001;
+}
+
+.navbar ul li {
+    float: left;
+    margin: 0;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #3b82f6;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1e3a8a;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1002;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover > a {
+    background-color: #3b82f6;
+    color: #ffffff;
+}
+
+/*** About Section ***
+  
+  Purpose:
+  - Add style rules for your website's About section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+.about-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    border-left: 5px solid #3b82f6;
+    font-family: 'Georgia', serif;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about-item:nth-of-type(1) {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+/*** Schedule Section ***
+  
+  Purpose:
+  - Add style rules for your website's Schedule section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+.schedule-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    border-left: 5px solid #10b981;
+    font-family: 'Georgia', serif;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.schedule-item:nth-of-type(1) {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.schedule-item:nth-of-type(2) {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.schedule-item:nth-of-type(3) {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.schedule-item:nth-of-type(4) {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.schedule-item:nth-of-type(5) {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* YouTube placeholder styles */
+.youtube-embed { display: flex; align-items: center; justify-content: center; }
+.youtube-thumb {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.youtube-play {
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+.youtube-play:hover { transform: scale(1.05); }
+.youtube-open-link {
+    position: absolute;
+    left: 12px;
+    bottom: 10px;
+    background: rgba(255,255,255,0.9);
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: #0b1220;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+/*** Links Section ***
+  
+  Purpose:
+  - Add style rules for your website's Links section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+.links-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    border-left: 5px solid #7c3aed;
+    font-family: 'Georgia', serif;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.links-item:nth-of-type(1) {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.links-item:nth-of-type(2) {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+/*** RSVP Section ***
+  
+  Purpose:
+  - Add style rules for your website's RSVP form
+
+  When To Modify:
+  - [ ] Project 6 (REQUIRED FEATURE)
+  - [ ] Project 7 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.rsvp-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.rsvp-para {
+    width: 55%;
+    padding-right: 10px;
+}
+
+.rsvp-participants {
+    width: 45%;
+    padding-right: 10px;
+}
+
+/* Add other rsvp-related selectors here */
+.error {
+    border-style: solid;
+    border-width: 2px;
+    /* Set border-color and background */
+    border-color: #e11d48; /* red */
+    background-color: #ffe4e6; /* light pink */
+}
+.form-container {
+    margin-top: 10px;
+}
+
+#rsvp-form label {
+    display: block;
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+#rsvp-form {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#rsvp-form .form-field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+#rsvp-form input[type="text"],
+#rsvp-form input[type="email"] {
+    width: 200px; /* shorter inputs */
+    padding: 6px 8px;
+    margin-top: 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+/* Stack fields on small screens */
+@media (max-width: 640px) {
+    #rsvp-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    #rsvp-form .form-field {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    #rsvp-form input[type="text"],
+    #rsvp-form input[type="email"] {
+        width: 100%;
+    } 
+}
+
+#rsvp-button {
+    margin-top: 12px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#rsvp-button:hover {
+    background-color: #2563eb;
+}
+/*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
+/*** Success Modal  ***
+  
+    Purpose:
+    - Add style rules to your website's pop-up modal, which appears
+        when a user successfully submits the RSVP form
+
+    When To Modify:
+    - [ ] Project 9 (REQUIRED FEATURE)
+    - [ ] Any time after
+***/
+
+.modal {
+    display: none;   /* modal should be hidden by default*/
+    position: fixed; /* modal cannot move around the screen */
+    z-index: 2000;      /* modal appears above other elements */ 
+  
+    /* Make the modal fill the entire screen */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    /* Add a semi-transparent background to shadow non-modal elements*/
+    background-color: rgba(0,0,0,0.4); /* 40% opacity black */
+
+    /* Flexbox settings for modal */
+    /* These won't apply until we update "display:" from "hidden" to "flex" in our JS */
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container {
+        /* Change modal size and spacing here */
+        padding: 30px;
+        width: 60%;
+
+        /* Customize modal style here */
+        background-color: #ffffff;
+        color: #0b1220;
+        text-align: center;
+        font-size: 1rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        /* Optional: Use flexbox to customize .modal-item layout */
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+
+}
+
+.modal-item {
+    max-width: 50%;
+}
+
+.modal-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Modal close button positioned inside modal text container */
+.modal-container { position: relative; }
+.modal-close {
+    position: absolute;
+    right: 18px;
+    top: 12px;
+    background-color: transparent;
+    color: #0b1220;
+    border: 2px solid rgba(0,0,0,0.08);
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.modal-close:hover {
+    background-color: #f3f4f6;
+}
+/* Customize Dark Mode Theme */
+.dark-mode {
+    background-color: #0b1220; /* page background */
+    color: #e6eef8; /* default text color */
+    /* remove printed/light background gradient */
+    background-image: none;
+}
+
+/* Dark mode: headings */
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4 {
+    color: #cfe8ff;
+}
+
+/* Make the theme button readable on light pages as well */
+#theme-button {
+    color: #fff;
+}
+
+/* In dark mode, adjust the button to be more visible */
+.dark-mode #theme-button {
+    background-color: rgba(255,255,255,0.06);
+    border-color: rgba(255,255,255,0.14);
+    color: #e6eef8;
+}
+
+/* Dark mode: visited links */
+.dark-mode a:visited, .dark-mode a:visited * {
+    color: #9b8cff;
+}
+
+/* Make major containers dark and text bright */
+.dark-mode .header-container,
+.dark-mode .about-container,
+.dark-mode .schedule-container,
+.dark-mode .links-container,
+.dark-mode .footer {
+    background-color: #0f1724; /* dark panel background */
+    color: #e6eef8;
+    box-shadow: none;
+    border-color: rgba(255,255,255,0.06);
+}
+
+/* Navbar and dropdown */
+.dark-mode .navbar ul {
+    background-color: #071026;
+}
+
+.dark-mode .dropdown-content {
+    background-color: #071026;
+}
+
+/* Buttons: ensure visibility on dark backgrounds */
+.dark-mode .header-button {
+    background-color: #0ea5a0; /* teal-ish */
+    color: #042027;
+    border-color: rgba(255,255,255,0.06);
+}
+
+.dark-mode button {
+    background-color: #1f6f8b;
+    color: #e6eef8;
+}
+
+/* Links and paragraphs */
+.dark-mode a,
+.dark-mode a * {
+    color: #93c5fd; /* light blue links */
+}
+
+.dark-mode p,
+.dark-mode li,
+.dark-mode span {
+    color: #dbeafe; /* bright but softer text */
+}
+
+/* Images: slightly darker border to match theme */
+.dark-mode img {
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+/*** Custom Colors (OPTIONAL) ***
+  
+  Purpose:
+  - Use CSS variables to define custom colors for your website
+  - To get you started, we've provided the color scheme used in our example site.
+  - To reference a color variable in your css, use var(--variable-name) in place of a color value
+
+  When To Modify:
+  - [ ] Any time (OPTIONAL)
+***/
+
+:root {
+    /* Light Mode */
+    --bg-color: #a6a0cf;
+    --text-color: #231942;
+
+    /* Dark Mode */
+    --bg-color-dark-mode: #3e3377;
+    --text-color-dark-mode: #fff;
+
+    /* Accent Colors */
+    --accent-color-light: #d2cff5;
+    --accent-color-medium: #684fb5;
+    --accent-color-dark: #482f95;
+    --accent-color-darkest: #231942;
+    --accent-color-green: #28eb76;
+
+    /* Error Colors */
+    --error-color: #f8bbd0;
+    --error-color-border: #e63946;
+}
